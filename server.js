@@ -20,6 +20,7 @@ app.get('/api/' , (req, res) => {
     res.json(data)
 })
 
+
 app.post('/api/', (req, res) => {
 	let newData = {
 		id,
@@ -39,7 +40,7 @@ app.delete('/api/:id', (req, res)=> {
 
 app.use(express.static(path.resolve(__dirname, 'build')))
 
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
 })
 
