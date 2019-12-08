@@ -12,8 +12,6 @@
     "react-scripts": "3.2.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,6 +32,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://reactnotepadbackend.herokuapp.com/",
-  "hompage": "https://rad0n.github.io/reactnotepad/"
+  "proxy": "https://reactnotepadbackend.herokuapp.com/"
+  
 }
