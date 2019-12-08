@@ -44,6 +44,7 @@ if(process.env.NODE_ENV === 'production') {
     app.use(express.static(path.resolve(__dirname, 'build')))
 
     app.get('/*', (req, res) => {
+        console.log("router request")
         res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
     })
 }
