@@ -2,14 +2,18 @@
 
 
 .form-style-6{
+    
+    align-items: center;
 	font: 95% Arial, Helvetica, sans-serif;
 	max-width: 400px;
-	margin: 20px auto;
-	padding: 16px;
-	background: #f2f4f7;
+	margin: 5vh;
+	
+	background: white;
+	padding: 3vw;
+	border: 1px solid #e7e9eb;
 }
 .form-style-6 h1{
-	background: #3f81c7;
+	background: #1578e2;
 	padding: 20px 0;
 	font-size: 140%;
 	font-weight: 300;
@@ -69,7 +73,7 @@
 	-moz-box-sizing: border-box;
 	width: 100%;
 	padding: 3%;
-	background: #3f81c7;
+	background: #1578e2;
 	border-bottom: 2px solid #3f81c7;
 	border-top-style: none;
 	border-right-style: none;
@@ -78,5 +82,5 @@
 }
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
-	background: #1578e2;
+	background: #0560c2;
 }

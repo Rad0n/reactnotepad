@@ -1,14 +1,16 @@
 import React from 'react'
-import './NavStyle.css'
+import './InnerNavStyle.css'
 import { Link } from 'react-router-dom'
 
-const Nav = () => {
-    return (
-        <nav className="navbar">
-            
-            
-            <div className="ulbox">
+
+const InnerNav = () => {
+    return(
+        <div className="navbar">
+            <div></div>
+            <div className="logo">
                 <h1>Notepad</h1>
+            </div>
+            <div className="ulbox">
                 <ul className="ulstyle">
                     <Link to="/">
                         <li>Home</li>
@@ -21,8 +23,8 @@ const Nav = () => {
 
             </div>
             
-        </nav>
+        </div>
     )
 }
 
-export default Nav
+export default InnerNav

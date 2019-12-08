@@ -14,13 +14,17 @@ class Card extends Component {
     }
 
     changedis = async () => {
-        this.setState({
-            dis: 'nope'
-        })
+
+        if(window.confirm("Are you sure?")){
+            this.setState({
+                dis: 'nope'
+            })
 
 
-        
-        let reply = await axios.delete(`/api/${this.props.id}`)
+            
+            let reply = await axios.delete(`/api/${this.props.id}`)
+
+        }
         
         
     }

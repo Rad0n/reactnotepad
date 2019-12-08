@@ -1,7 +1,8 @@
 
+
 @media screen and (min-width: 760px){
 
-    .MainPage {
+    .AddPage {
         background-color: #f2f4f7;
         display: grid;
         grid-template-columns: 15vw 70vw;
@@ -11,14 +12,23 @@
         grid-gap:5vw;
     }
     
+    .align {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
 }
 
-.MainPage {
+
+.AddPage {
     background-color: #f2f4f7;
+    display: grid;
     
     
     
    
- 
 }
 
+.align {
+    display: grid;
+    
+}

@@ -37,8 +37,6 @@ class Add extends Component {
         
     }
 
-
-
     render () {
 
         const { title, body, formSubmitted } = this.state
@@ -59,10 +57,7 @@ class Add extends Component {
             </div>
 
         }
-        
-
-        
-
+         
         return(
             
             <div className="form-style-6">
@@ -70,18 +65,13 @@ class Add extends Component {
                 <h1>Add Data</h1>
                 <form onSubmit={this.handleSubmit}>
 
-
                     {formsData}
-                    
-                    
-                    
+                    <br />
+ 
                     <a href="/">
                         <input type="button" value="Go Back"/>
                     </a>
-                    
                 </form>
-
-
             </div>
             
         )
