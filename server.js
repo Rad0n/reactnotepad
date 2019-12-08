@@ -13,7 +13,7 @@ const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(compression())
-app.use(morgan('common'))
+app.use(morgan('dev'))
 
 
 app.get('/api/' , (req, res) => {    
