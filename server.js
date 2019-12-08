@@ -38,15 +38,9 @@ app.delete('/api/:id', (req, res)=> {
 	
 })
 
-app.get("/service-worker.js", (req, res) => {
-    res.sendFile(path.join(__dirname ,"build", "service-worker.js"));
-});
-
-
-
 app.use(express.static(path.resolve(__dirname, 'build')))
 
-app.get('/*', (req, res) => {
+app.get('/', (req, res) => {
     console.log("router request")
     res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
 })
