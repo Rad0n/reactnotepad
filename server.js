@@ -40,7 +40,7 @@ app.delete('/api/:id', (req, res)=> {
 
 app.use(express.static(path.resolve(__dirname, 'build')))
 
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
     console.log("router request")
     res.sendFile(path.resolve(__dirname, 'build', 'index.html'))
 })
