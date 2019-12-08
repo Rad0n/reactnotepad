@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom';
+
 import './AddStyle.css'
 import axios from 'axios'
 class Add extends Component {

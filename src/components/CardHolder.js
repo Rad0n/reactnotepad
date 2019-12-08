@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 //import fetch from 'node-fetch'
 import Card from './Card'
 import './CardHolderStyle.css'
+import { Link } from 'react-router-dom'
 
 
 
@@ -26,16 +27,27 @@ class CardHolder extends Component {
 
     render () {
         const { posts } = this.state
-        return (
-            <div >
-            
 
-                <div>
-                    {
-                        posts.map(x => <Card key={x.id} id={x.id} title={x.title} body={x.body} />)
-                    }
-                </div>
-            </div>
+        let listData = <div className="listParent">
+                            <div />
+                            <div className="listEmpty">
+                                <h1>List empty</h1>
+                                <Link to="/add">Click here</Link> to add data  
+                            </div>
+                            
+                        </div>
+
+        if(posts.length !== 0 ){
+            listData = <div>
+                                {
+                                    posts.map(x => <Card key={x.id} id={x.id} title={x.title} body={x.body} />)
+                                }
+                        </div>
+            
+        }
+        return (
+            <div>{listData}</div>
+            
         )
     }
 }

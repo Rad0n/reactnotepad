@@ -2,7 +2,7 @@ import React from 'react';
 import MainPage from './components/MainPage'
 import './App'
 import AddPage from './components/AddPage'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 
 
